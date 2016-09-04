@@ -1,0 +1,21 @@
+1.反射是在运行时期
+2.Class.forName("全限定名");
+  clazz.newInstance();
+3.全限定名称：包名加类名
+4.要个私有字段赋值，先得授权。setAccessible(true)
+  getDeclared...--获取公私有的东西
+5.获取Class 对象
+  （1）全限定名称Class.forName("全限定名");
+  （2）类.class
+  （3）new 类（）
+6.getField()
+  getMethod()
+  getConstructor()
+7.反射中参数--参数类型.class
+8.反射中调用方法--方法名.invoke(obj,参数...)；
+9.反射后的类-->编译-->运行-->编译
+10.@Deprecated--可能在未来被删除
+11.@Target(ElementType.TYPE)--注解定义中用于限制注解位置METHODE,FIELD
+  public @interface 名{类型 名1（）}--用的注解中@注解名（名1 = ）
+  定义默认的--类型名 名（） default 值；
+  @Retention(RetentionPolicy.RUNTIME)--生命周期
