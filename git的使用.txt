@@ -5,7 +5,7 @@
 5.提交文件步骤：(1)在本地仓库即文件夹中直接加入文件
                 (2)面板中输入：git add 文件（把文件放到缓存区） 
 							-->git commit -m "仓库名"（提交到本地创库）
-							-->git remote add origin git@github.com:用户名/创库名.git（本地创库与在线创库连接）
+							-->git remote add origin git@github.com:用户名/创库名.git（本地创库与在线创库连接）==nandemeyides/git-myfirst
 							-->git push -u origin master(若是第二次提交可以省略-u)（将本地创库推送到在线创库）
 注：在线的readme文件不在本地会报错：failed to push some refs to 'git@github.com:yangchao0718/cocos2d.git
     解决办法：git pull --rebase origin master
