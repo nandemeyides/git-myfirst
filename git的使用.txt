@@ -1,11 +1,12 @@
-1.ÔÚ±¾µØ´´½¨Ò»¸öÎÄ¼ş¼Ğ×÷Îª±¾µØ²Ö¿â
-2.´ò¿ªÎÄ¼ş¼ĞÓÒ¼ü
-3.ÔÚÃæ°åÉÏÊäÈë:git init;
-4.µ±Ã»ÓĞ´´½¨readmeÎÄ¼şµÄÊ±ºò£¬ÊäÈë£ºtouch README.md-->git add README.md-->git commit -"first commit"-->git remote add origin git@github.com:ÓÃ»§Ãû/´´¿âÃû.git-->git push -u origin master¼´¿ÉÒÔ°ÑreadmeÎÄ¼şÉÏ´«ÉÏÈ¥
-5.Ìá½»ÎÄ¼ş²½Öè£º(1)ÔÚ±¾µØ²Ö¿â¼´ÎÄ¼ş¼ĞÖĞÖ±½Ó¼ÓÈëÎÄ¼ş
-                (2)Ãæ°åÖĞÊäÈë£ºgit add ÎÄ¼ş£¨°ÑÎÄ¼ş·Åµ½»º´æÇø£© 
-							-->git commit -m "²Ö¿âÃû"£¨Ìá½»µ½±¾µØ´´¿â£©
-							-->git remote add origin git@github.com:ÓÃ»§Ãû/´´¿âÃû.git£¨±¾µØ´´¿âÓëÔÚÏß´´¿âÁ¬½Ó£©==nandemeyides/git-myfirst
-							-->git push -u origin master(ÈôÊÇµÚ¶ş´ÎÌá½»¿ÉÒÔÊ¡ÂÔ-u)£¨½«±¾µØ´´¿âÍÆËÍµ½ÔÚÏß´´¿â£©
-×¢£ºÔÚÏßµÄreadmeÎÄ¼ş²»ÔÚ±¾µØ»á±¨´í£ºfailed to push some refs to 'git@github.com:yangchao0718/cocos2d.git
-    ½â¾ö°ì·¨£ºgit pull --rebase origin master
+1.åœ¨æœ¬åœ°åˆ›å»ºä¸€ä¸ªæ–‡ä»¶å¤¹ä½œä¸ºæœ¬åœ°ä»“åº“
+2.æ‰“å¼€æ–‡ä»¶å¤¹å³é”®
+3.åœ¨é¢æ¿ä¸Šè¾“å…¥:git init;
+4.å½“æ²¡æœ‰åˆ›å»ºreadmeæ–‡ä»¶çš„æ—¶å€™ï¼Œè¾“å…¥ï¼štouch README.md-->git add README.md-->git commit -"first commit"-->git remote add origin git@github.com:ç”¨æˆ·å/åˆ›åº“å.git-->git push -u origin masterå³å¯ä»¥æŠŠreadmeæ–‡ä»¶ä¸Šä¼ ä¸Šå»
+5.æäº¤æ–‡ä»¶æ­¥éª¤ï¼š(1)åœ¨æœ¬åœ°ä»“åº“å³æ–‡ä»¶å¤¹ä¸­ç›´æ¥åŠ å…¥æ–‡ä»¶
+                (2)é¢æ¿ä¸­è¾“å…¥ï¼šgit add æ–‡ä»¶ï¼ˆæŠŠæ–‡ä»¶æ”¾åˆ°ç¼“å­˜åŒºï¼‰ 
+							-->git commit -m "ä»“åº“å"ï¼ˆæäº¤åˆ°æœ¬åœ°åˆ›åº“ï¼‰
+							-->git remote add origin git@github.com:ç”¨æˆ·å/åˆ›åº“å.gitï¼ˆæœ¬åœ°åˆ›åº“ä¸åœ¨çº¿åˆ›åº“è¿æ¥ï¼‰==nandemeyides/git-myfirst
+							-->git push -u origin master(è‹¥æ˜¯ç¬¬äºŒæ¬¡æäº¤å¯ä»¥çœç•¥-u)ï¼ˆå°†æœ¬åœ°åˆ›åº“æ¨é€åˆ°åœ¨çº¿åˆ›åº“ï¼‰
+æ³¨ï¼šåœ¨çº¿çš„readmeæ–‡ä»¶ä¸åœ¨æœ¬åœ°ä¼šæŠ¥é”™ï¼šfailed to push some refs to 'git@github.com:yangchao0718/cocos2d.git
+    è§£å†³åŠæ³•ï¼šgit pull --rebase origin master
+6.æŠŠåœ¨çº¿åˆ›åº“downä¸‹æ¥ï¼šgit clone https://github.com/nandemeyides/git-myfirst.gitï¼ˆåœ°å€ï¼‰
