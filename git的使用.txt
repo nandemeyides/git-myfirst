@@ -10,3 +10,4 @@
 注：在线的readme文件不在本地会报错：failed to push some refs to 'git@github.com:yangchao0718/cocos2d.git
     解决办法：git pull --rebase origin master
 6.把在线创库down下来：git clone https://github.com/nandemeyides/git-myfirst.git（地址）
+7.git pull 更新本地仓库
