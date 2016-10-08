@@ -1,31 +1,31 @@
-AngularJSÊÇÒ»¸ö JavaScript¿ò¼Ü,ÊÇÒÔÒ»¸öJavaScriptÎÄ¼þÐÎÊ½·¢²¼µÄ£¬¿ÉÍ¨¹ý<script>±êÇ©Ìí¼Óµ½htmlÒ³Ãæ
-         Í¨¹ýÖ¸ÁîÀ©Õ¹HTML£¬Í¨¹ý±í´ïÊ½°ó¶¨Êý¾Ýµ½HTML¡£
-	¡¶ÊÇÒÔng×÷ÎªÇ°×ºµÄHTMLÊôÐÔ¡·
+AngularJSæ˜¯ä¸€ä¸ª JavaScriptæ¡†æž¶,æ˜¯ä»¥ä¸€ä¸ªJavaScriptæ–‡ä»¶å½¢å¼å‘å¸ƒçš„ï¼Œå¯é€šè¿‡<script>æ ‡ç­¾æ·»åŠ åˆ°htmlé¡µé¢
+         é€šè¿‡æŒ‡ä»¤æ‰©å±•HTMLï¼Œé€šè¿‡è¡¨è¾¾å¼ç»‘å®šæ•°æ®åˆ°HTMLã€‚
+	ã€Šæ˜¯ä»¥ngä½œä¸ºå‰ç¼€çš„HTMLå±žæ€§ã€‹
 
-1.ÒýÈë£¨Ê¹ÓÃ£©:<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
-£¡£¡£¡ÎÒÃÇ½¨Òé°Ñ½Å±¾·ÅÔÚ <body> ÔªËØµÄµ×²¿¡£
-      Õâ»áÌá¸ßÍøÒ³¼ÓÔØËÙ¶È£¬ÒòÎªHTML¼ÓÔØ²»ÊÜÖÆÓÚ½Å±¾¼ÓÔØ¡£
-2.À©Õ¹html:
-AngularJS Í¨¹ý ng-directivesÀ©Õ¹ÁËHTML¡£
-	       ng-app Ö¸Áî¶¨ÒåÒ»¸ö AngularJS Ó¦ÓÃ³ÌÐò¡£
-	       ng-model Ö¸Áî°ÑÔªËØÖµ£¨±ÈÈçÊäÈëÓòµÄÖµ£©°ó¶¨µ½Ó¦ÓÃ³ÌÐò¡£
-	       ng-bind Ö¸Áî°ÑÓ¦ÓÃ³ÌÐòÊý¾Ý°ó¶¨µ½ HTML ÊÓÍ¼¡£
-3.AngularJSµÄ×÷ÓÃ
-  °ÑÓ¦ÓÃ³ÌÐòÊý¾Ý°ó¶¨µ½ HTML ÔªËØ¡£
-  ¿ËÂ¡ºÍÖØ¸´HTMLÔªËØ¡£
-  Òþ²ØºÍÏÔÊ¾HTMLÔªËØ¡£
-  ÔÚHTMLÔªËØ"±³ºó"Ìí¼Ó´úÂë¡£
-  Ö§³ÖÊäÈëÑéÖ¤¡£  
-4.HTML5ÔÊÐíÀ©Õ¹µÄ£¨×ÔÖÆµÄ£©ÊôÐÔ£¬ÒÔ data- ¿ªÍ·¡£
-  AngularJS ÊôÐÔÒÔ ng- ¿ªÍ·£¬µ«ÊÇÄú¿ÉÒÔÊ¹ÓÃ data-ng- À´ÈÃÍøÒ³¶ÔHTML5ÓÐÐ§¡£
-5.AngularJS±í´ïÊ½
-  ±í´ïÊ½Ð´ÔÚË«´óÀ¨ºÅÄÚ£º{{ expression }}¡£
-  ±í´ïÊ½°ÑÊý¾Ý°ó¶¨µ½HTML£¬ÕâÓë ng-bind Ö¸ÁîÓÐÒìÇúÍ¬¹¤Ö®Ãî¡£
-  ½«ÔÚ±í´ïÊ½ÊéÐ´µÄÎ»ÖÃ"Êä³ö"Êý¾Ý¡£
-  ±í´ïÊ½ ºÜÏñ JavaScript ±í´ïÊ½£ºËüÃÇ¿ÉÒÔ°üº¬ÎÄ×Ö¡¢ÔËËã·ûºÍ±äÁ¿¡£eg: {{ 5 + 5 }} »ò {{ firstName + " " + lastName }}
-6.Ä£¿é£¨Module£© ¶¨ÒåÁË AngularJS Ó¦ÓÃ¡£
-  ¿ØÖÆÆ÷£¨Controller£© ÓÃÓÚ¿ØÖÆ AngularJS Ó¦ÓÃ¡£
-  ng-appÖ¸Áî¶¨ÒåÁËÓ¦ÓÃ, ng-controller ¶¨ÒåÁË¿ØÖÆÆ÷¡£
+1.å¼•å…¥ï¼ˆä½¿ç”¨ï¼‰:<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+ï¼ï¼ï¼æˆ‘ä»¬å»ºè®®æŠŠè„šæœ¬æ”¾åœ¨ <body> å…ƒç´ çš„åº•éƒ¨ã€‚
+      è¿™ä¼šæé«˜ç½‘é¡µåŠ è½½é€Ÿåº¦ï¼Œå› ä¸ºHTMLåŠ è½½ä¸å—åˆ¶äºŽè„šæœ¬åŠ è½½ã€‚
+2.æ‰©å±•html:
+AngularJS é€šè¿‡ ng-directivesæ‰©å±•äº†HTMLã€‚
+	       ng-app æŒ‡ä»¤å®šä¹‰ä¸€ä¸ª AngularJS åº”ç”¨ç¨‹åºã€‚
+	       ng-model æŒ‡ä»¤æŠŠå…ƒç´ å€¼ï¼ˆæ¯”å¦‚è¾“å…¥åŸŸçš„å€¼ï¼‰ç»‘å®šåˆ°åº”ç”¨ç¨‹åºã€‚
+	       ng-bind æŒ‡ä»¤æŠŠåº”ç”¨ç¨‹åºæ•°æ®ç»‘å®šåˆ° HTML è§†å›¾ã€‚
+3.AngularJSçš„ä½œç”¨
+  æŠŠåº”ç”¨ç¨‹åºæ•°æ®ç»‘å®šåˆ° HTML å…ƒç´ ã€‚
+  å…‹éš†å’Œé‡å¤HTMLå…ƒç´ ã€‚
+  éšè—å’Œæ˜¾ç¤ºHTMLå…ƒç´ ã€‚
+  åœ¨HTMLå…ƒç´ "èƒŒåŽ"æ·»åŠ ä»£ç ã€‚
+  æ”¯æŒè¾“å…¥éªŒè¯ã€‚  
+4.HTML5å…è®¸æ‰©å±•çš„ï¼ˆè‡ªåˆ¶çš„ï¼‰å±žæ€§ï¼Œä»¥ data- å¼€å¤´ã€‚
+  AngularJS å±žæ€§ä»¥ ng- å¼€å¤´ï¼Œä½†æ˜¯æ‚¨å¯ä»¥ä½¿ç”¨ data-ng- æ¥è®©ç½‘é¡µå¯¹HTML5æœ‰æ•ˆã€‚
+5.AngularJSè¡¨è¾¾å¼
+  è¡¨è¾¾å¼å†™åœ¨åŒå¤§æ‹¬å·å†…ï¼š{{ expression }}ã€‚
+  è¡¨è¾¾å¼æŠŠæ•°æ®ç»‘å®šåˆ°HTMLï¼Œè¿™ä¸Ž ng-bind æŒ‡ä»¤æœ‰å¼‚æ›²åŒå·¥ä¹‹å¦™ã€‚
+  å°†åœ¨è¡¨è¾¾å¼ä¹¦å†™çš„ä½ç½®"è¾“å‡º"æ•°æ®ã€‚
+  è¡¨è¾¾å¼ å¾ˆåƒ JavaScript è¡¨è¾¾å¼ï¼šå®ƒä»¬å¯ä»¥åŒ…å«æ–‡å­—ã€è¿ç®—ç¬¦å’Œå˜é‡ã€‚eg: {{ 5 + 5 }} æˆ– {{ firstName + " " + lastName }}
+6.æ¨¡å—ï¼ˆModuleï¼‰ å®šä¹‰äº† AngularJS åº”ç”¨ã€‚
+  æŽ§åˆ¶å™¨ï¼ˆControllerï¼‰ ç”¨äºŽæŽ§åˆ¶ AngularJS åº”ç”¨ã€‚
+  ng-appæŒ‡ä»¤å®šä¹‰äº†åº”ç”¨, ng-controller å®šä¹‰äº†æŽ§åˆ¶å™¨ã€‚
   <script>
     var app = angular.module('myApp', []);
       app.controller('myCtrl', function($scope) {
@@ -33,61 +33,34 @@ AngularJS Í¨¹ý ng-directivesÀ©Õ¹ÁËHTML¡£
       $scope.lastName= "Doe";
     });
   </script> 
-7.¿ÉÒÔÊ¹ÓÃ .directive º¯ÊýÀ´Ìí¼Ó×Ô¶¨ÒåµÄÖ¸Áî¡£
-8.scope×÷ÓÃÓò£ºÓ¦ÓÃÓÚhtmlºÍcontrolÖ®¼äµÄÅ¦´ø¡£
-  ÄãÔÚ AngularJS ´´½¨¿ØÖÆÆ÷Ê±£¬Äã¿ÉÒÔ½« $scope ¶ÔÏóµ±×÷Ò»¸ö²ÎÊý´«µÝ¡£
-  ËùÓÐµÄÓ¦ÓÃ¶¼ÓÐÒ»¸ö$rootScope,Ëü¿ÉÒÔ×÷ÓÃÔÚng-appÖ¸Áî°üº¬¶îËùhtmlÔªËØÖÐ¡£
-  $rootScope ¿É×÷ÓÃÓÚÕû¸öÓ¦ÓÃÖÐ¡£ÊÇ¸÷¸öcontrollerÖÐscopeµÄÇÅÁº¡£ÓÃrootscope¶¨ÒåµÄÖµ£¬¿ÉÒÔÔÚ¸÷¸öcontrollerÖÐÊ¹ÓÃ¡£
-9.¿ØÖÆÆ÷£ºÒ»°ã¿ØÖÆÆ÷¶¼ÊÇÁí×÷Ò»¸öÎÄ¼þÀ´ÒýÓÃµÄ,¼´xx.jsÎÄ¼þ
-  eg:ÒýÓÃ£º<script src = "xx.js"></script>
+7.å¯ä»¥ä½¿ç”¨ .directive å‡½æ•°æ¥æ·»åŠ è‡ªå®šä¹‰çš„æŒ‡ä»¤ã€‚
+8.scopeä½œç”¨åŸŸï¼šåº”ç”¨äºŽhtmlå’Œcontrolä¹‹é—´çš„çº½å¸¦ã€‚
+  ä½ åœ¨ AngularJS åˆ›å»ºæŽ§åˆ¶å™¨æ—¶ï¼Œä½ å¯ä»¥å°† $scope å¯¹è±¡å½“ä½œä¸€ä¸ªå‚æ•°ä¼ é€’ã€‚
+  æ‰€æœ‰çš„åº”ç”¨éƒ½æœ‰ä¸€ä¸ª$rootScope,å®ƒå¯ä»¥ä½œç”¨åœ¨ng-appæŒ‡ä»¤åŒ…å«é¢æ‰€htmlå…ƒç´ ä¸­ã€‚
+  $rootScope å¯ä½œç”¨äºŽæ•´ä¸ªåº”ç”¨ä¸­ã€‚æ˜¯å„ä¸ªcontrollerä¸­scopeçš„æ¡¥æ¢ã€‚ç”¨rootscopeå®šä¹‰çš„å€¼ï¼Œå¯ä»¥åœ¨å„ä¸ªcontrollerä¸­ä½¿ç”¨ã€‚
+9.æŽ§åˆ¶å™¨ï¼šä¸€èˆ¬æŽ§åˆ¶å™¨éƒ½æ˜¯å¦ä½œä¸€ä¸ªæ–‡ä»¶æ¥å¼•ç”¨çš„,å³xx.jsæ–‡ä»¶
+  eg:å¼•ç”¨ï¼š<script src = "xx.js"></script>
 
-10.¹ýÂËÆ÷
-   ¹ýÂËÆ÷¿ÉÒÔÍ¨¹ýÒ»¸ö¹ÜµÀ×Ö·û£¨|£©ºÍÒ»¸ö¹ýÂËÆ÷Ìí¼Óµ½±í´ïÊ½ÖÐ¡£
-   eg:{{±äÁ¿|¹ýÂËÆ÷}}
-11.AngularJSÖÐ£¬·þÎñÊÇÒ»¸öº¯Êý»ò¶ÔÏó£¬¿ÉÊ¹ÓÃ¡£
-   Èç£º$location·þÎñ£¬Ëü¿ÉÒÔ·µ»Øµ±Ç°Ò³ÃæµÄURLµØÖ·¡£
-   ×¢Òâ$location ·þÎñÊÇ×÷ÎªÒ»¸ö²ÎÊý´«µÝµ½ controller ÖÐ¡£Èç¹ûÒªÊ¹ÓÃËü£¬ÐèÒªÔÚ controller ÖÐ¶¨Òå¡£
-       $httpÊÇAngularJSÓ¦ÓÃÖÐ×î³£ÓÃµÄ·þÎñ£¬·þÎñÏò·þÎñÆ÷·¢ËÍÇëÇó£¬Ó¦ÓÃÏìÓ¦·þÎñÆ÷´«ËÍ¹ýÀ´µÄÊý¾Ý¡£
+10.è¿‡æ»¤å™¨
+   è¿‡æ»¤å™¨å¯ä»¥é€šè¿‡ä¸€ä¸ªç®¡é“å­—ç¬¦ï¼ˆ|ï¼‰å’Œä¸€ä¸ªè¿‡æ»¤å™¨æ·»åŠ åˆ°è¡¨è¾¾å¼ä¸­ã€‚
+   eg:{{å˜é‡|è¿‡æ»¤å™¨}}
+11.AngularJSä¸­ï¼ŒæœåŠ¡æ˜¯ä¸€ä¸ªå‡½æ•°æˆ–å¯¹è±¡ï¼Œå¯ä½¿ç”¨ã€‚
+   å¦‚ï¼š$locationæœåŠ¡ï¼Œå®ƒå¯ä»¥è¿”å›žå½“å‰é¡µé¢çš„URLåœ°å€ã€‚
+   æ³¨æ„$location æœåŠ¡æ˜¯ä½œä¸ºä¸€ä¸ªå‚æ•°ä¼ é€’åˆ° controller ä¸­ã€‚å¦‚æžœè¦ä½¿ç”¨å®ƒï¼Œéœ€è¦åœ¨ controller ä¸­å®šä¹‰ã€‚
+       $httpæ˜¯AngularJSåº”ç”¨ä¸­æœ€å¸¸ç”¨çš„æœåŠ¡ï¼ŒæœåŠ¡å‘æœåŠ¡å™¨å‘é€è¯·æ±‚ï¼Œåº”ç”¨å“åº”æœåŠ¡å™¨ä¼ é€è¿‡æ¥çš„æ•°æ®ã€‚
        $tomeout
-   ×Ô¶¨Òå·þÎñ£ºapp.service('hexafy', function()
+   è‡ªå®šä¹‰æœåŠ¡ï¼šapp.service('hexafy', function()
          {
     	   this.myFunc = function (x) 
             {
               return x.toString(16);
              }
          });
-   ×Ô¶¨Òå¹ýÂËÆ÷£ºapp.filter('myFormat',['hexafy', function(hexafy) 
+   è‡ªå®šä¹‰è¿‡æ»¤å™¨ï¼šapp.filter('myFormat',['hexafy', function(hexafy) 
                  {
                       return function(x) 
                     {
                       return hexafy.myFunc(x);
                      };
                   }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ËùÓÐµÄÓ¦ÓÃ¶¼ÓÐÒ»¸ö$rootScope×÷Îª²ÎÊý´«µÝ£¬
+   æ‰€æœ‰çš„åº”ç”¨éƒ½æœ‰ä¸€ä¸ª$rootScopeä½œä¸ºå‚æ•°ä¼ é€’
