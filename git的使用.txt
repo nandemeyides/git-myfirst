@@ -11,6 +11,6 @@
     解决办法：git pull --rebase origin master
 6.把在线创库down下来：git clone https://github.com/nandemeyides/git-myfirst.git #地址
 7.git pull #更新本地仓库
-8.git add * #添加所有的文件
-  git commit -m "描述"
-  git push #上传
+8.下载仓库：git add * #添加所有的文件
+           git commit -m "描述"
+           git push #上传
