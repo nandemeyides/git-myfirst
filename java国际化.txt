@@ -1,0 +1,35 @@
+1.直接式
+  所用类：Locale\Bundle
+  资源文件格式:baseName _ language _country.properties
+  多个不同语言的资源文件都是一样的baseName开头
+  获取java支持的所有的语言和国家：可调用Locale类的getAvailableLocale方法获取
+  （1） java提供了一个native2ascII工具用于将中文字符进行编码处理：native2ascii(因为properties文件是不允许存中文的)，这个工具可以在%JAVA_HOME%/bin路径下找到。使用该工具的语法格式如下：
+
+	native2ascii 源资源文件 目的资源文件
+
+	如：native2ascii mess_zh_CN.properties aa.properties
+
+	上面的命令将生成一个aa.properties文件，该文件才是我们需要的资源文件，该文件看上去包含很多乱码，其实是非西欧字符的UNICODE编码方式，这完全正常。将该文件重命名为mess_zh_CN.properties即可。 
+ （2）//取得系统默认的国家/语言环境
+
+	Locale myLocale = Locale.getDefault();
+
+	//根据指定国家/语言环境加载资源文件
+
+	ResourceBundle bundle = ResourceBundle.getBundle("mess" , myLocale);
+
+	//打印从资源文件中取得的消息
+
+	System.out.println(bundle.getString("hello"))
+  （3）日期数字，占未付的输入
+	String pattern = "On {0}, a hurricance destroyed {1} houses and caused {2} of damage.";
+        //实例化MessageFormat对象，并装载相应的模式字符串
+        MessageFormat format = new MessageFormat(pattern, Locale.CHINA);
+        Object arr[] = {new Date(), 99, 100000000};
+        //格式化模式字符串，参数数组中指定占位符相应的替换对象
+        String result = format.format(arr);
+        System.out.println(result);
+  （4）占位符的三种书写方式
+　	{argumentIndex}: 0-9 之间的数字，表示要格式化对象数据在参数数组中的索引号
+　　	{argumentIndex,formatType}: 参数的格式化类型
+　　	{argumentIndex,formatType,FormatStyle}: 格式化的样式，它的值必须是与格式化类型相匹配的合法模式、或表示合法模式的字符串。
