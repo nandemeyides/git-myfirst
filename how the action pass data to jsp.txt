@@ -1,0 +1,11 @@
+1.using the OGNL expression,使用struts自带的标签，支持OGNL，比如：s:property
+  eg:jsp:<s:property value="value.name"/>访问action时，s:property标签显示getValue.getName();
+2.使用jsp本身的性质，通过request和session来货值
+  即action:把需传到页面的值放入request，session中。
+    jsp:<%=request.getAttribute("value.getName())%>
+        <%=session.get("value").getName()%>     
+3.java后台request.setAttribute("mes,"mes)
+  jsp:${request.mes}、${mes}即可得到参数 
+说白了，放在request,session的变量都可以通过${变量名}获取得到  
+      
+  

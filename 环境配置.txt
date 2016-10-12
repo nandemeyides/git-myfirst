@@ -1,0 +1,5 @@
+eclipse
+1.×ÖÌåÉèÖÃ=¡·text£ºColors...-->Ë«»÷-->Basic-->text font -->Ë«»÷
+2.jdkÉèÖÃ=¡·jdk:Ë«»÷installed jres-->search
+3.×Ö·û±àÂëÉèÖÃ=¡·work:workspace-->other-->utf-8
+4.tomcatÒýÓÃ=>runtime:runtime environments
