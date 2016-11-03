@@ -23,7 +23,7 @@
 {
    return this.optional(element)|| /^[0-9]\d{5}(?!\d)$/.test(value);;
 },$.validator.format("请输入合法的邮箱"));		
-													
+http://www.cnblogs.com/jhxk/articles/4225435.html													
 2.调用的方法
  (1) $( "#frm" ).validate({  //方法的参数可以输入0个或键值对（key/value）,这个方法是为了 处理例如：submit , focus ,  keyup , blur, click 触发验证的，对象是整个表单的元素
         rules: {  
@@ -116,6 +116,6 @@ error.appendTo(element.parent().next());
 rules : {username:required : true,maxlength : 20} 
 }); 
 ===================================================
-
+http://www.cnblogs.com/jhxk/articles/4225435.html
 https://zhidao.baidu.com/question/433942941717326124.html
 http://www.cnblogs.com/chongtao/p/5823175.html
