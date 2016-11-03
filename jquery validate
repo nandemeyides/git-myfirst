@@ -84,3 +84,38 @@ function check_infor(){
   注意：$("form").validate()方法必须首先被调用。
   这个规则也能包含一个messages-object，定义常用的messages。
 文章出处：http://blog.csdn.net/topwqp/article/details/8561084
+3.错误放置位置的方法
+js:==============================================
+(1)errorPlacement:function(error,element) {
+   error.addpendTo("#errMsg");//将错误信息全部放入到一个div内部显示
+ });
+  <div id="errMsg"><!--错误信息集中这里显示--></div>
+  <form name="fm" id="fm" action="">
+  ......
+  </form>
+(2)
+errorLabelContainer:".erro", 
+wrapper:"li",
+showErrors:function(errorMap,errorList) {
+this.defaultShowErrors();
+$('ol li:hidden').remove()//删除所有隐藏的li标签
+$('ol li:eq(0)').nextAll().remove()//第一个li下所有跟随的同胞级li删除
+
+},
+(3)
+//可以使用jq 自带的属性改变错误的显示的位置,其中element是验证未通过的当前表单元素,error为错误后的提示信息
+$("#subscribeForm").validate({ 
+errorPlacement : function(error, element) { 
+if (element.is(":radio")) 
+error.appendTo(element.parent()); 
+else if (element.is(":checkbox")) 
+error.appendTo(element.parent().parent()); 
+else 
+error.appendTo(element.parent().next()); 
+} 
+rules : {username:required : true,maxlength : 20} 
+}); 
+===================================================
+
+https://zhidao.baidu.com/question/433942941717326124.html
+http://www.cnblogs.com/chongtao/p/5823175.html
