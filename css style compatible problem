@@ -55,4 +55,5 @@ div{width:300px !important;width/**/:340px;margin:0 10px 0 10px}
 
 11.ul标签在Mozilla中默认是有padding值的,而在IE中只有margin有值所以先定义 
 ul{margin:0;padding:0;}就能解决大部分问题
+注意点：调整样式的时候尽量不要用float属性即可，一般padding啊什么的就不会受到影响
 注：参考文章：http://www.jb51.net/css/493362.html
