@@ -16,6 +16,7 @@
                               git push #上传
 ================================================================================================================================ 
 
-参考文件:https://my.oschina.net/xdev/blog/114383（详细的图片命令，you can have it）	 		      
+参考文件:https://my.oschina.net/xdev/blog/114383（详细的图片命令，you can have it）
+ 	http://www.cnblogs.com/lenve/p/4889317.html
 			      
 			  
