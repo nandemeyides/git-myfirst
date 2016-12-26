@@ -1,0 +1,8 @@
+eclipse
+1.ctrl+alt+/ #/**/
+2.ctrl+/ #//
+3.ctrl+alt+up/down #复制代码
+4.ctrl+tab #同一软件页面的跳转
+5.alt+tab #不同软件之间的跳转
+6.alt+left/ctrl+f6 #jump in eclipse pages 
+7.alt+down/up #bring code to other place
