@@ -1,0 +1,59 @@
+Example1:改写前：xxx. yyy:{width:600px;} (当设为IE7和Firefox下显示正常的600px时 ，IE6下会错位，改为590px，则IE6下正常，IE7和Firefox下显示不完美) 
+
+解：
+   改写后： xxx. yyy{width:600px;* width:600px;_ width:590px;} 
+关键点：（Firefox不认识*和_，而IE都认识*，IE7不支持_，IE6支持_） 
+注意点：顺序千万不要乱，因为当出现重复定义时，浏览器默认按最后一下渲染，所以一 定要先正常，再*，最后_。 
+
+
+常见的兼容问题： 
+
+1.DOCTYPE影响CSS处理 
+
+2.FireFox火狐:div设置margin-left,margin-right为auto时已经居中,IE不行 
+
+3.FireFox火狐:body设置text-align时,div需要设置margin:auto(主要是margin-left,margin- 
+
+right)方可居中 
+
+4.FireFox火狐:设置padding后,div会增加height和width,但IE不会,故需要用!important多设一 
+
+个height和width 
+
+5.FireFox火狐:支持!important,IE则忽略,可用!important为FireFox火狐特别设置样式 
+
+6.div的垂直居中问题:vertical-align:middle;将行距增加到和整个DIV一样高line- 
+
+height:200px;然后插入文字，就垂直居中了。缺点是要控制内容不要换行 
+
+7.cursor:pointer可以同时在IEFireFox火狐中显示游标手指状，hand仅IE可以 
+
+8.FireFox火狐:链接加边框和背景色，需设置display:block,同时设置float:left保证不换行。 
+
+参照menubar,给a和menubar设置高度是为了避免底边显示错位,若不设height,可以在menubar中 
+
+插入一个空格。 
+
+9.在mozillafirefox和IE中的BOX模型解释不一致导致相差2px解决方法： 
+div{margin:30px!important;margin:28px;} 
+注意这两个margin的顺序一定不能写反，据阿捷的说法!important这个属性IE不能识别，但别的 
+
+浏览器可以识别。所以在IE下其实解释成这样： 
+div{maring:30px;margin:28px} 
+重复定义的话按照最后一个来执行，所以不可以只写margin:XXpx!important; 
+
+10.IE5和IE6的BOX解释不一致 
+IE5下 
+div{width:300px;margin:0 10px 0 10px;} 
+div的宽度会被解释为300px-10px(右填充)-10px(左填充)最终div的宽度为280px，而在IE6和其 
+
+他浏览器上宽度则是以300px+10px(右填充)+10px(左填充)=320px来计算的。这时我们可以做如 
+
+下修改 
+div{width:300px !important;width/**/:340px;margin:0 10px 0 10px} 
+关于这个/**/是什么我也不太明白，只知道IE5和firefox都支持但IE6不支持 
+
+11.ul标签在Mozilla中默认是有padding值的,而在IE中只有margin有值所以先定义 
+ul{margin:0;padding:0;}就能解决大部分问题
+注意点：调整样式的时候尽量不要用float属性即可，一般padding啊什么的就不会受到影响
+注：参考文章：http://www.jb51.net/css/493362.html

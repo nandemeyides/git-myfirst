@@ -1,11 +1,11 @@
-1.using the OGNL expression,Ê¹ÓÃstruts×Ô´øµÄ±êÇ©£¬Ö§³ÖOGNL£¬±ÈÈç£ºs:property
-  eg:jsp:<s:property value="value.name"/>·ÃÎÊactionÊ±£¬s:property±êÇ©ÏÔÊ¾getValue.getName();
-2.Ê¹ÓÃjsp±¾ÉíµÄĞÔÖÊ£¬Í¨¹ırequestºÍsessionÀ´»õÖµ
-  ¼´action:°ÑĞè´«µ½Ò³ÃæµÄÖµ·ÅÈërequest£¬sessionÖĞ¡£
+1.using the OGNL expression,ä½¿ç”¨strutsè‡ªå¸¦çš„æ ‡ç­¾ï¼Œæ”¯æŒOGNLï¼Œæ¯”å¦‚ï¼šs:property
+  eg:jsp:<s:property value="value.name"/>è®¿é—®actionæ—¶ï¼Œs:propertyæ ‡ç­¾æ˜¾ç¤ºgetValue.getName();
+2.ä½¿ç”¨jspæœ¬èº«çš„æ€§è´¨ï¼Œé€šè¿‡requestå’Œsessionæ¥è·å–å€¼
+  å³action:æŠŠéœ€ä¼ åˆ°é¡µé¢çš„å€¼æ”¾å…¥requestï¼Œsessionä¸­ã€‚
     jsp:<%=request.getAttribute("value.getName())%>
         <%=session.get("value").getName()%>     
-3.javaºóÌ¨request.setAttribute("mes,"mes)
-  jsp:${request.mes}¡¢${mes}¼´¿ÉµÃµ½²ÎÊı 
-Ëµ°×ÁË£¬·ÅÔÚrequest,sessionµÄ±äÁ¿¶¼¿ÉÒÔÍ¨¹ı${±äÁ¿Ãû}»ñÈ¡µÃµ½  
+3.javaåå°request.setAttribute("mes",mes)
+  jsp:${request.mes}ã€${mes}å³å¯å¾—åˆ°å‚æ•° 
+è¯´ç™½äº†ï¼Œæ”¾åœ¨request,sessionçš„å˜é‡éƒ½å¯ä»¥é€šè¿‡${å˜é‡å}è·å–å¾—åˆ°  
       
   

@@ -1,0 +1,5 @@
+条件：tomcat解压版
+1.复制你想要的份数的tomcat
+2.按添加tomcat的步骤添加tomcat
+3.tomcat进行add选择tomcat时，每一个都是不同的
+4.修改tomcat的三个不同的端口就可以了。
