@@ -1,0 +1,86 @@
+1.自定义验证方法
+  $.validate.addMethod("methodName",fuction(value,element,param){ });
+  value:元素的值
+  element:元素
+  param:方法参数。
+  一般调用方法时：true/值
+  eg:a.定义的方法
+（1）$.validate.addMethod("byteMaxLength",fuction(value,element,param)
+{
+
+      var length =value.length;
+      for(var i = 0; i<value.length; i++)
+      {
+	if(value.charCodeAt(i)>127)//一个汉字代表两个字符，字符为0-127的ascll码。
+          {
+	     length++;
+            }
+
+       }
+       return this.optional(element)|| (length <= param);
+},$.validator.format("不能超过{0}个字节（一个中文字算2个字节）"));//前面那句，表示元素为空时，不必验证，若是不为空这进行后面验证
+（2） $.validate.addMethod("postCodeVal",fuction(value,element)
+{
+   return this.optional(element)|| /^[0-9]\d{5}(?!\d)$/.test(value);;
+},$.validator.format("请输入合法的邮箱"));		
+													
+2.调用的方法
+ (1) $( "#frm" ).validate({  //方法的参数可以输入0个或键值对（key/value）,这个方法是为了 处理例如：submit , focus ,  keyup , blur, click 触发验证的，对象是整个表单的元素
+        rules: {  
+                username: {  //表单为表单元素id
+                        required: true,  
+                        minlength: 4,  
+                        maxlength: 20,  
+                        byteMaxLength:20,  
+                        valiEnglish:true  
+                },  
+                postcode: {  
+                     postcodeVal:true  
+                    },  
+                number: {  
+                    byteMaxLength:5,  
+                    numFormat:5  
+                    },  
+                    identifier: {  
+                    sfzhValidate:true     
+                 }  
+                      
+                      
+                  
+        },  
+        messages: {  
+                username: {  
+                        required: "请输入用户名4--20个英文字符",  
+                        minlength: $.format("Keep typing, at least {0} characters required!"),  
+                        maxlength: $.format("Whoa! Maximum {0} characters allowed!")  
+                },  
+                number: {  
+                       numFormat: $.format("请输入{0}数字")  
+                    }  
+        }  
+});  
+ (2)注意：在自定义的check_infor()调用之前 ，必须首先调用$("#frm").valudate();方法；
+   <script type="text/javascript">            
+            $("#frm").validate();  
+            check_infor();  
+  
+});  
+  
+function check_infor(){   
+    $("#username").attr("class","{byteMaxLength:22,valiEnglish:true}");  
+    $("#postcode").attr("class","{byteMaxLength:6,postcodeVal:true}");  
+    $("#number").attr("class","{byteMaxLength:6,numFormat:6}");  
+    $("#identifier").attr("class","{sfzhValidate:true}");   
+ }  
+</script>  
+(3)
+   $("#frm").validate();  
+   $('#username').rules('add', { required: true,  byteMaxLength:20,valiEnglish:true});  
+   $('#postcode').rules('add', { postcodeVal:true});  
+   $('#number').rules('add', { byteMaxLength:5,numFormat:5});  
+   $('#identifier').rules('add', { sfzhValidate:true});  
+//为每一个单独的元素添加验证规则。其中调用了rules( "add", rules )方法：
+  增加验证规则为匹配的元素。
+  注意：$("form").validate()方法必须首先被调用。
+  这个规则也能包含一个messages-object，定义常用的messages。
+文章出处：http://blog.csdn.net/topwqp/article/details/8561084
