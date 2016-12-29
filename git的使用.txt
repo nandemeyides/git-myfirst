@@ -14,6 +14,8 @@
 8.一次性上传多个文件（整个项目）：git add * #添加所有的文件
            		      git commit -m "描述"
                               git push #上传
+9.使用eclipse生成公钥
+  http://blog.csdn.net/boonya/article/details/50516753
 ================================================================================================================================ 
 
 参考文件:https://my.oschina.net/xdev/blog/114383（详细的图片命令，you can have it）
