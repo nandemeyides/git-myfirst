@@ -1,0 +1,47 @@
+nexus:是meven仓库管理器，在代理远程仓库的同时维护本地仓库
+
+一、安装方式：
+1.内嵌Jetty的bundle，只要你有JRE就能直接运行。
+2.WAR方式，你只须简单的将其发布到web容器中即可使用。
+
+Bundle方式安装
+解压nexus-webapp-1.3.0-bundle.zip --》运行Nexus.bat（最好用cmd的方式运行）《eg:D:\dev_tools\nexus-webapp-1.3.0\bin\jsw\windows-x86-32》 --》看到“Started SelectChannelConnector@0.0.0.0:8081”之后，说明Nexus启动成功了--》访问http://127.0.0.1:8081/nexus
+停止Nexus，Ctrl+C
+
+WAR方式安装
+需要一个web容器，下载的nexus-webapp-1.3.0.war 重命名为nexus.war ，然后复制到D:\dev_tools\apache-tomcat-6.0.18\webapps\nexus.war ，然后启动CMD，cd到D:\dev_tools\apache-tomcat-6.0.18\bin\ 目录，运行startup.bat 。--》访问http://127.0.0.1:8081/nexus
+
+
+
+*********************
+另一篇文章
+
+下载地址：https://www.sonatype.com/download-oss-sonatype
+解压一路进去nexus-2.8.1-01/bin/jsw，然后选择适合自己的系统的文件夹进去，老夫的电脑是win32。用管理员身份先运行install-nexus.bat安装服务，然后运行console-nexus.bat，等起来之后直接在浏览器中输入：http://localhost:8081/nexus
+Repositories，找到右边仓库列表中的三个仓库Apache Snapshots，Codehaus Snapshots和Maven Central，然后再没有仓库的configuration下把Download Remote Indexes修改为true。
+然后在Apache Snapshots，Codehaus Snapshots和Maven Central这三个仓库上分别右键，选择Repari Index，这样Nexus就会去下载远程的索引文件
+============》这样设置以后, Nexus会自动从远程中央仓库下载索引文件, 为了检验索引文件自动下载是否生效,可以切换到Browse Index看看是否生成了这些索引文件。
+参考文件：http://www.tuicool.com/articles/QbquqiQ
+*********************
+二、访问页面后对maven仓库的代理
+1.登陆：登录名和密码：admin/admin123
+2.点击：Repositories
+  显示：hosted，本地仓库，通常我们会部署自己的构件到这一类型的仓库。
+        proxy，代理仓库，它们被用来代理远程的公共仓库，如maven中央仓库。
+        group，仓库组，用来合并多个hosted/proxy仓库，通常我们配置maven依赖仓库组。
+3.联系远程的中央仓库：点击Maven Central--》Configuration--》Remote Storage Location：http://repo1.maven.org/maven2/--》Download Remote Indexes：true-->save
+4.管理本地maven仓库：Nexus预定义了3个本地仓库，分别为Releases，Snapshots，和3rd Party。Releases用于部署我们自己的release构件，Snapshots用于部署我们自己的snapshot构件，而3rd Party用于部署第三方构件，有些构件如Oracle的JDBC驱动，我们不能从公共仓库下载到，我们就需要将其部署到自己的仓库中。
+5.配置maven使用nexus:将Repository配置到POM中，但一般来说这不是很好的做法，原因很简单，你需要为所有的Maven项目重复该配置。因此，这里我将Repository的配置放到$user_home/.m2/settings.xml中--》具体配置看文：http://juvenshun.iteye.com/blog/349534
+
+
+
+
+
+
+
+
+参考文件：
+http://juvenshun.iteye.com/blog/349534
+https://www.sonatype.com/download-oss-sonatype
+http://blog.csdn.net/shenshen123jun/article/details/9084293（这个非常的详细）
+http://blog.csdn.net/wang379275614/article/details/43940259/（这个也可以参考）
