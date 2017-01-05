@@ -13,3 +13,5 @@
   http://blog.csdn.net/tkwdmylove/article/details/41737227
 6.谷歌浏览器的使用方法
   http://wiki.jikexueyuan.com/project/chrome-devtools/tips-and-tricks.html
+7.与Java相关的内容，这位博主写得不错，易懂，能抓住重点。
+  http://my.csdn.net/Ideality_hunter#
