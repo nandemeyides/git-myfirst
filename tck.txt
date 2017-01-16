@@ -1,6 +1,7 @@
 1.对话框
   http://www.cnblogs.com/tylerdonet/p/4188962.html
   http://blog.sina.com.cn/s/blog_610f47c50100ohe4.html
+  自定义对话框：http://blog.csdn.net/qiuzhi__ke/article/details/48167793
 2.maven非常实用的教程
   http://www.cnblogs.com/luotaoyeah/archive/2014/06/02/3764533.html
   http://www.open-open.com/lib/view/open1453195091683.html
