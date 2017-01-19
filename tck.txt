@@ -16,3 +16,5 @@
   http://wiki.jikexueyuan.com/project/chrome-devtools/tips-and-tricks.html
 7.与Java相关的内容，这位博主写得不错，易懂，能抓住重点。
   http://my.csdn.net/Ideality_hunter#
+8.sql注入
+  http://baike.baidu.com/link?url=swPbcvmwp2sYwOJIQhUmYPFxLJF6WrExecUGw401HXsCY1ssgB1zc9NJeOewZLPq6nX2Az1djjJN6ht4uy0E_Df6zpWREqPEp9XRA5zknty
