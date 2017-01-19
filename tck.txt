@@ -24,3 +24,5 @@
 10.dubbo
    http://blog.csdn.net/top_code/article/details/51010614
    http://dubbo.io/User+Guide-zh.htm
+11.五种方式让你在java中读取properties文件内容不再是难题
+   http://www.cnblogs.com/hafiz/p/5876243.html
