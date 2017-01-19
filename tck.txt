@@ -17,6 +17,7 @@
 7.与Java相关的内容，这位博主写得不错，易懂，能抓住重点。
   http://my.csdn.net/Ideality_hunter#
 8.sql注入
+  http://blog.csdn.net/stilling2006/article/details/8526458
   http://baike.baidu.com/link?url=swPbcvmwp2sYwOJIQhUmYPFxLJF6WrExecUGw401HXsCY1ssgB1zc9NJeOewZLPq6nX2Az1djjJN6ht4uy0E_Df6zpWREqPEp9XRA5zknty
 9.网络安全
   http://baike.baidu.com/view/2962427.htm
