@@ -18,3 +18,5 @@
   http://my.csdn.net/Ideality_hunter#
 8.sql注入
   http://baike.baidu.com/link?url=swPbcvmwp2sYwOJIQhUmYPFxLJF6WrExecUGw401HXsCY1ssgB1zc9NJeOewZLPq6nX2Az1djjJN6ht4uy0E_Df6zpWREqPEp9XRA5zknty
+9.网络安全
+  http://baike.baidu.com/view/2962427.htm
