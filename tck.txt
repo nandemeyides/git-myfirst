@@ -31,4 +31,6 @@
    http://www.tuicool.com/ah
 13.node.js
    http://blog.jobbole.com/53736/#article-comment
-   
+   http://www.ibm.com/developerworks/cn/opensource/os-nodejs/index.html?ca=drs#ibm-pcon
+   https://www.zhihu.com/question/19793473
+   http://www.runoob.com/nodejs/nodejs-install-setup.html
