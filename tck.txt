@@ -34,3 +34,5 @@
    http://www.ibm.com/developerworks/cn/opensource/os-nodejs/index.html?ca=drs#ibm-pcon
    https://www.zhihu.com/question/19793473
    http://www.runoob.com/nodejs/nodejs-install-setup.html
+14.nginx命令
+   http://blog.csdn.net/aidenliu/article/details/6413342
