@@ -36,3 +36,5 @@
    http://www.runoob.com/nodejs/nodejs-install-setup.html
 14.nginx命令
    http://blog.csdn.net/aidenliu/article/details/6413342
+15.页面数组表单的提交方式
+   http://www.tuicool.com/articles/B7ZRRvm
